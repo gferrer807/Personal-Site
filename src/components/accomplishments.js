@@ -1,6 +1,8 @@
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap'
 import { Col } from 'react-bootstrap'
+import { AiOutlineMail, AiOutlineNumber } from 'react-icons/ai'
+import { ImLocation } from 'react-icons/im';
 
 let Accomplishments = () => {
     return (
@@ -15,17 +17,29 @@ let Accomplishments = () => {
             <Row>
                 <Col>
                     <div classname="hero-right-wrapper">
-                        <img src="https://i.imgur.com/mnSwZ7N.jpg"/>
+                        <div className="contact-card-info">
+                            <ImLocation className="contact-icon"/>
+                            <h3>Location</h3>
+                            <p>NYC/NJ Area</p>
+                        </div>
                     </div>
                 </Col>
                 <Col>
                     <div classname="hero-right-wrapper">
-                        <img src="https://i.imgur.com/mnSwZ7N.jpg"/>
+                        <div className="contact-card-info">
+                            <AiOutlineMail className="contact-icon"/>
+                            <h3>Email</h3>
+                            <p>ferrergiancarlo@gmail.com</p>
+                        </div>
                     </div>
                 </Col>
                 <Col>
                     <div classname="hero-right-wrapper">
-                        <img src="https://i.imgur.com/mnSwZ7N.jpg"/>
+                        <AiOutlineMail className="contact-icon"/>
+                        <div className="contact-card-info">
+                            <h3>Email</h3>
+                            <p>ferrergiancarlo@gmail.com</p>
+                        </div>
                     </div>
                 </Col>
             </Row>
